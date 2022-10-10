@@ -142,3 +142,9 @@ val customDef = TopLevelObject(query, Query::class)
 
 toSchema(config, listOf(customDef))
 ```
+
+:::note
+Custom scalars combined with optional/nullable types on constructors are not supported in 6.x.x. Fixing in https://github.com/ExpediaGroup/graphql-kotlin/issues/1549.
+
+More info: https://github.com/ExpediaGroup/graphql-kotlin/issues/1564.
+:::
